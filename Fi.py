@@ -107,3 +107,36 @@ print("Number is: ",num1+num2)
 #literals in python are values that are directly assigned to a variable.
 #literals are also called constants in python.
 #literals in python are values that are directly assigned to a variable.
+
+num1 = 10.5
+print(int(num1))
+print(type(num1))
+
+num4 = int(input("Enter a number:"))
+print("area :",num4**2)
+
+#average
+num5 = int(input("Enter a number:"))
+num6 = int(input("Enter a number"))
+num7 = int(input("Enter a number"))
+print("average :",num5+num6+num7/3)
+
+#to swap numbers using 3rd variable
+a = 10
+b = 20
+c = a
+a = b
+b = c
+
+print("a =", a)
+print("b =", b)
+
+#to swap two numbers using plus and minus
+a = 10
+b = 20
+a = a + b
+b = a - b
+a = a - b
+
+print("a =", a)
+print("b =", b)
