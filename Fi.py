@@ -140,3 +140,34 @@ a = a - b
 
 print("a =", a)
 print("b =", b)
+
+FirstName = "John"
+LastName = "Smith"
+print(FirstName,LastName)
+print(FirstName+" "+LastName)
+print(len(FirstName))
+
+#Strings are immutable 
+# str = "Susan"
+# str1 = 'p'
+# str1 = str[0]
+
+#String Slicing 
+str = "Susan"
+print(str[0:3])
+print(str[:3])
+print(str[1:3])
+print(str[1:])
+print(str[-1:1])
+
+#String Concatenation
+str = "Susan"
+str1 = 'p'
+str2 = str+str1
+print(str2)
+
+#String Formatting
+str = "Susan"
+str1 = 'p'
+str2 = f"{str}{str1}"
+print(str2)
