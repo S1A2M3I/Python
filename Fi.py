@@ -103,3 +103,7 @@ print("Name is :",name)
 num1 = int(input("Enter a number: "))
 num2 = int(input("Enter a number: "))
 print("Number is: ",num1+num2)
+
+#literals in python are values that are directly assigned to a variable.
+#literals are also called constants in python.
+#literals in python are values that are directly assigned to a variable.
