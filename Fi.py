@@ -269,7 +269,6 @@ print(tup[0])
 #tuple immutable
 # tup[0] = 10
 # print(tup)
-
 #single value in tuple is not tuple type value but it is int type value
 tup1 = (1)
 print(tup1)
@@ -331,14 +330,144 @@ print(list.sort(reverse=True))#Descending by using sort method
 #list uses methods and dynamic memory allocation
 
 
-#set
+#set are used to store unique values
+#it is immutable
+#it will also have random access of data possible
+#it is unordered
+#it is not indexed
+#Hashable does not allow duplicate values in set
 set = {1,2,3,4,5}
 print(set)
 print(type(set))
 
+#single value in set is a set type value
+set1 = {1}
+print(set1)
+print(type(set1))
 
-#dictionary 
+#unhashable
+# set = {1,2,3,4,5,1,[2,3,2,2,1]} lists are unhashable
+# print(set)
+
+#immutable
+# set[0] = 10
+# print(set)
+
+#set methods
+print(set.add(6))#adds the element by sorting and then add the element
+print(set.remove(2))
+print(set.discard(2))
+# print(set.clear())
+# print(set.pop())
+
+set2 = {6,7,6,4,2,8,9,2}
+print(set.union(set2))
+print(set.intersection(set2))
+
+
+#dictionary here values are stored in key value pair
+#it is mutable
+#it will also have random access of data possible
+#it is unordered
+#it is not indexed
 dict = {"name": "John", "age": 30, "city": "New York"}
-print(dict["name"])
+print(dict)
 print(type(dict))
 
+#accessing values in dictionary using key
+print(dict["name"])
+print(dict["age"])
+print(dict["city"])
+
+#single value in dictionary is a dictionary type value
+dict1 = {"name": "John"}
+print(dict1)
+print(type(dict1))
+
+#mutable
+dict["name"] = "John Smith"
+dict["age"] = 31
+dict["city"] = "New York"
+print(dict)
+
+#Empty dictionary
+dict = {}
+print(dict)
+
+#nested dictionary
+dict = {
+  "name": "John",
+  "age": 30,
+  "address": {
+    "street": "123 street",
+    "city": "Hyderabad",
+    "state": "Telangana" 
+  }
+}
+print(dict)
+
+#accessing values in nested dictionary
+print(dict["address"]["street"])
+
+#dictionary methods
+print(dict.keys())
+print(dict.values())
+print(dict.items())
+print(dict.get("name"))
+print(dict.pop("name"))
+# print(dict.popitem())
+# print(dict.clear())
+print(dict.copy())
+print(dict.update({"name": "John Smith"}))
+
+#update
+new_dict = {
+    name: "John Smith",
+}
+
+
+#return list of keys in dictionary
+print(dict.keys())
+
+#add dictionary manually by user input with keys and values
+dict4 = {}
+num8 = int(input("Enter the number of keys: "))
+for i in range(num8):
+    key = input("Enter the key: ")
+    value = input("Enter the value: ")
+    dict4[key] = value
+print(dict4)
+
+#counting vowels
+str9 = "John Smith"
+count = 0
+for i in str9:
+    if i in "aeiouAEIOU":
+        count += 1
+print(count)
+
+#loops 
+
+#while loop
+count = 5
+while 5 > 0:
+    print("Hello World")
+    i += 1
+
+# for loop
+for i in range(1, 11):
+    print(i)
+    
+
+li = [1,4,7,9,12,15,23]
+count = len(li)-1
+key = 15
+flag = 0
+while count >= 0:
+    if ((li[count]) == key):
+        print("found the key :",key,"and index is :",count)
+        flag = flag + 1
+        break
+    count -= 1
+if flag == 0:
+    print("key not found")
