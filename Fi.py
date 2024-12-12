@@ -246,3 +246,99 @@ elif b > c:
     print("b is greater")
 else:
     print("c is greater")
+    
+    
+    
+    
+#tuple 
+#list
+#set
+#dictionary
+
+#tuple used to store multiple values and immutable
+#helps to store hetrogenous values
+#it will store your data in continuous memory allocation
+#random access of data not possible
+tup = (1,2,3,4,5,2,3,6,2,1)
+print(tup)
+print(type(tup))
+
+#Random accesss
+print(tup[0])
+
+#tuple immutable
+# tup[0] = 10
+# print(tup)
+
+#single value in tuple is not tuple type value but it is int type value
+tup1 = (1)
+print(tup1)
+print(type(tup1))
+
+#tuple slicing
+print(tup[0:3])
+print(tup[:3])
+print(tup[1:3])
+print(tup[1:])
+print(tup[-3:-1])
+
+#tuple methods
+print(tup.count(2))#count of the element
+print(tup.index(2))#index of the element
+
+
+#list used to store multiple values 
+#helps to store heterogenous values
+#it will store your data in continuous memory allocation
+#it is mutable that is it can be changed
+#it will also have random access of data possible i.e. indexing
+list = [1,2,3,4,5,6]
+print(list)
+print(type(list))
+
+#Random accesss
+list[0] = 10
+print(list)
+
+#single value in list is a list type value
+list1 = [1]
+print(list1)
+print(type(list1))
+
+#list slicing
+print(list[0:3])
+print(list[:3])
+print(list[1:3])
+print(list[1:])
+print(list[-3:-1])
+
+#list methods
+print(list.count(2))#count of the element
+print(list.index(2))#index of the element
+print(list.append(6))#inserts the element
+print(list.insert(2,6))#inserts the element
+#print(list.remove(2)) removes the element
+# print(list.pop()) removes the last element
+# print(list.clear()) clears the list
+print(list.reverse())#Descending 
+print(list.sort())#Ascending by using sort method
+print(list.sort(reverse=True))#Descending by using sort method
+
+#Functions work for multiple values
+#methods work for single value
+#stack is static memory allocation
+#Heap is dynamic memory allocation
+#list uses methods and dynamic memory allocation
+
+
+#set
+set = {1,2,3,4,5}
+print(set)
+print(type(set))
+
+
+#dictionary 
+dict = {"name": "John", "age": 30, "city": "New York"}
+print(dict["name"])
+print(type(dict))
+
