@@ -7,7 +7,7 @@ else:
     if weight > 180:
             print("Invalid weight")
     else:
-            bmi = weight *10000/ (height ** 2)
+            bmi = weight * 10000/ (height ** 2)
             if bmi <= 18.5:
                 print("Underweight")
             elif bmi <= 25:
