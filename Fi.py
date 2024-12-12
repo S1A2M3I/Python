@@ -158,7 +158,7 @@ print(str[0:3])
 print(str[:3])
 print(str[1:3])
 print(str[1:])
-print(str[-1:1])
+print(str[-3:-1])
 
 #String Concatenation
 str = "Susan"
@@ -171,3 +171,78 @@ str = "Susan"
 str1 = 'p'
 str2 = f"{str}{str1}"
 print(str2)
+
+#String Methods
+str = "Susan"
+str1 = 'p'
+str2 = str.upper()
+print(str2)
+str2 = str.lower()
+print(str2)
+str2 = str.title()
+print(str2)
+str2 = str.capitalize()
+print(str2)
+str2 = str.find('u')
+print(str2)
+str2 = str.replace('u','o')
+print(str2)
+str2 = str.count('u')
+print(str2)
+str2 = str.strip()
+print(str2)
+str2 = str.split()
+print(str2)
+str2 = str.endswith('n')
+print(str2)
+str2 = str.startswith('S')
+print(str2)
+str2 = str.count('u')
+print(str2)
+
+
+#Conditional Statements
+# if
+# else
+# elif
+#Nested if
+#Ternary Operator
+
+#if-else
+age = int(input("Enter your age: "))
+if age >= 18:
+    print("You are eligible to vote")
+else:
+    print("You are not eligible to vote")
+
+#if-elif-else
+age = int(input("Enter your age: "))
+if age >= 18 and age < 100:
+    print("You are eligible to vote")
+elif age == 17:
+    print("You can vote next year")
+else:
+    print("You are not eligible to vote")
+    
+#multiple if
+age = int(input("Enter your age: "))
+if age >= 18:
+    print("You are eligible to vote")
+if age == 17:
+    print("You can vote next year")
+if age < 18:
+    print("You are not eligible to vote")
+else:
+    print("You are not eligible to vote")
+    
+
+a = 10
+b = 15
+c = 9
+
+if a > b and a > c:
+    print("a is greater")
+elif b > c:
+    print("b is greater")
+else:
+    print("c is greater")
