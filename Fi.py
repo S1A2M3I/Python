@@ -458,7 +458,7 @@ while 5 > 0:
 for i in range(1, 11):
     print(i)
     
-
+#finding an element in a list using while loop
 li = [1,4,7,9,12,15,23]
 count = len(li)-1
 key = 15
@@ -471,3 +471,10 @@ while count >= 0:
     count -= 1
 if flag == 0:
     print("key not found")
+    
+#finding an element in a list using index method
+li1 = li.index(15)
+if li1:
+    print("Element found :",li1)
+else:
+    print("Element not found")
