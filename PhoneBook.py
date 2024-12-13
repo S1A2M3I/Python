@@ -5,9 +5,9 @@ def display_menu():
     print("1. Add a contact")
     print("2. Search a contact")
     print("3. Update a contact")
-    print("2. Delete a contact")
-    print("4. List all contacts")
-    print("5. Exit")
+    print("4. Delete a contact")
+    print("5. List all contacts")
+    print("6. Exit")
     
 def add_contact(phonebook):
     name = input("Enter the contact name : ")
@@ -31,8 +31,23 @@ def update_contact(phonebook):
     name = input("Enter the name to be updated in the phonebook: ")
     if name in phonebook:
         phonebook[name] = input("Enter the new number to be updated: ")
+        print(f"Contact {name} updated successfully")
     else:
         print("There is no such contact exits in phonebook")
+        
+
+def delete_contact(phonebook):
+    name = input("Enter the contact name to be deleted: ")
+    if name in phonebook:
+        del phonebook[name]
+        print("Deleted Contact")
+    else:
+        print("No Such Contact Exits")
+        
+def display_contact(phonebook):
+    for name, phone in phonebook:
+        print(f"Name: {name} Phone: {phone}")
+        
     
 def main():
     phonebook = {}
@@ -57,6 +72,7 @@ def main():
             
         elif choice == "6":
             print("Exiting the phonebook")
+            break
             
 
 main()
