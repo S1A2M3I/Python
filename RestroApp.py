@@ -24,7 +24,7 @@ while(True):
     another_order = input("Do You Want Another Item!:(yes or no)")
 
     if another_order == "yes":
-        item_2 = input("Enter the name of the next item !")
+        item_2 = input("Enter the name of the next item :")
     
         if item_2 in menu:
             order_total = order_total + menu[item_2]
@@ -36,3 +36,4 @@ while(True):
         break
 
 print(f"The Total Amount for items to pay is{order_total}")
+
