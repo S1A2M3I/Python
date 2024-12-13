@@ -446,18 +446,25 @@ for i in str9:
         count += 1
 print(count)
 
-#loops 
 
+#loops 
 #while loop
 count = 5
 while 5 > 0:
     print("Hello World")
     i += 1
+    
 
 # for loop
 for i in range(1, 11):
     print(i)
     
+# alternate for loop
+kli = [22,12,2,23,2]
+for i in kli:
+    print("Hello World")
+
+
 #finding an element in a list using while loop
 li = [1,4,7,9,12,15,23]
 count = len(li)-1
@@ -476,5 +483,36 @@ if flag == 0:
 li1 = li.index(15)
 if li1:
     print("Element found :",li1)
+else:
+    print("Element not found")
+    
+#Unique Elements     
+li4 = [3,7,8,1,1,3]
+li5 = []
+count = len(li4)-1
+for i in range(0,count):
+    for j in range(i+1,count+1):
+        if li4[i] == li4[j]:
+            print("Duplicate elements are :",li4[i])
+            break
+        else:
+            li5.append(li4[i])
+            
+
+#Counting odd elements in a list
+li9 = [1,2,3,4,5,6,7,8,9]
+count = 0
+for i in li9:
+    if i % 2 != 0:
+        count = count + 1
+print("Count of odd elements are :",count)
+
+#finding an element in a list using for loop
+li10 = [1,4,9,16,25]
+key = 16
+for i in li10:
+    if i == key:
+        print("Element found")
+        break
 else:
     print("Element not found")
