@@ -450,19 +450,29 @@ print(count)
 #loops 
 #while loop
 count = 5
-while 5 > 0:
+while count > 10:
     print("Hello World")
     i += 1
     
 
-# for loop
+# for loop using range
 for i in range(1, 11):
     print(i)
     
-# alternate for loop
+#for loop using list
 kli = [22,12,2,23,2]
 for i in kli:
-    print("Hello World")
+    print(kli[i])
+    
+# for loop using tuple
+kli2 = (22,12,2,23,2)
+for i in kli:
+    print(kli2[i])
+    
+# for loop using dictionary
+kli3 = {"name": "John", "age": 30, "city": "New York"}
+for i in kli:
+    print(kli3[i])
 
 
 #finding an element in a list using while loop
@@ -472,6 +482,7 @@ key = 15
 flag = 0
 while count >= 0:
     if ((li[count]) == key):
+    #or if key in li[count]:
         print("found the key :",key,"and index is :",count)
         flag = flag + 1
         break
@@ -510,9 +521,60 @@ print("Count of odd elements are :",count)
 #finding an element in a list using for loop
 li10 = [1,4,9,16,25]
 key = 16
+count = 0
 for i in li10:
+    count += 1
     if i == key:
-        print("Element found")
+        print("Element found",i,"and index is :",count)
         break
+    
+ #else should be outside the for loop to avoid infinite loop
+
 else:
     print("Element not found")
+    
+
+#Factorial 
+num = int(input("Enter a number: "))
+fact = 1
+for i in range(1,num+1):
+    fact = fact * i
+print(fact)
+
+
+#Function
+def hello(n):
+    return n*n
+
+print(hello(5))
+
+#user defined function
+#print(),len(),max(),min(),sorted(),sum(),all(),any(),input()
+
+def bill(amt,unit):
+    total = unit + amt
+    return total
+#calling the function
+print(bill("500000","Rs"))
+
+#default parameter
+def greet(name = "user"):
+    print("Hello",name)
+greet()
+
+#converting every unit into usd
+def bill(amt,unit="USD"):
+    if unit == "Rs":
+        total = float(amt) * 0.014
+        return total
+    elif unit == "dhr":
+        total = float(amt) * 2.65
+        return total
+    else:
+        total = unit + amt
+        return total        
+#calling the function
+print(bill("500000","Rs"))
+print(bill("500000","dhr"))
+print(bill("500000"))
+    
