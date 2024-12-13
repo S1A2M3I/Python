@@ -44,10 +44,14 @@ def delete_contact(phonebook):
     else:
         print("No Such Contact Exits")
         
-def display_contact(phonebook):
-    for name, phone in phonebook:
-        print(f"Name: {name} Phone: {phone}")
         
+def display_contact(phonebook):
+    if not phonebook:
+        print("No contacts in phonebook")
+    else:
+        print("\n Phonebook Contact:")
+        for name, phone in phonebook.items():
+            print(f"Name: {name} Phone: {phone}")   
     
 def main():
     phonebook = {}
