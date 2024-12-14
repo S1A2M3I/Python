@@ -77,6 +77,5 @@ def main():
         elif choice == "6":
             print("Exiting the phonebook")
             break
-            
 
 main()
