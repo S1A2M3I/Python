@@ -93,11 +93,93 @@ else:
     ag1 = 16
     if age > 16 and age < 30:
         weight = float(input("Enter your weight: "))
-        if weight > 50:
+        if weight > 50 and weight < 80:
             print(f"{user} is eligible in military with weight {weight}")
         else:
-            print(f"{user} is not eligible in military with weight {we1 - weight}")
+            print(f"{user} is not eligible in military need weight {we1 - weight} kg more")
     else:   
-        print(f"{user} is not eligible in military with age { ag1 - age}")        
+        print(f"{user} is not eligible in military with age { ag1 - age} years more")        
         
-        
+    
+    
+
+#Ascii Value
+#A = 65
+#Z = 90
+# a = 97
+# z = 122
+
+#Slicing of String
+name = "John Smith"
+print(name[0:3])
+print(name[:3])
+print(name[1:3])
+print(name[1:])
+print(name[-3:-1])
+print(name[0::2])#step size is 2
+print(name[::2])
+
+#match case
+name = "John Smith"
+print(name.upper())
+print(name.lower())
+print(name.title())
+
+
+#Grade
+name = input("Enter your name: ")
+percentage = int(input("Enter your percentage: "))
+if percentage >= 90 :
+    print(f"{name} your grade is A")
+elif percentage >= 80 and percentage < 90:
+    print(f"{name} your grade is B")
+elif percentage >= 70 and percentage < 80:
+    print(f"{name} your grade is C")
+elif percentage >= 60 and percentage < 70:
+    print(f"{name} your grade is D")
+else:
+    print(f"{name} your grade is F")
+    
+    
+    
+    
+while True:
+    num10 = int(input("Enter a number: "))
+    if num10 % 2 == 0:
+        print(f"{num10} is even")
+    else:
+        print(f"{num10} is odd")
+        break
+            
+            
+#Range 
+li = list(range(1,101))
+print(li)
+li1 = list(range(0,101,2)) #step size is 2 and to get even numbers
+print(li1)
+li2 = list(range(1,101,2)) #step size is 2 and to get odd numbers
+print(li2)
+
+
+# list functions
+print(li.count(2))
+print(li.index(2))
+print(li.reverse())
+print(li.sort())
+print(li.append(102))
+print(li.insert(0, 100))
+print(li.pop(0))
+print(li.remove(2))
+print(li.clear())
+print(li.copy())
+print(li.extend([100,101,102]))
+
+
+str = "Susan hello how are you"
+print(str.title())
+
+#For Loop 
+li = ["Susan", "John", "Smith"]
+for i in range(len(li)):
+    print(f"Hi {li[i]} ...... nice to meet you")
+

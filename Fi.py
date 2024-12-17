@@ -1,19 +1,19 @@
-#Python is a programming language that lets you work quickly and integrate systems more effectively.
-#It's a general-purpose language that lets you work with data, whether in the cloud or on-premises.
-#Framework is a collection of tools and libraries that can be used to build applications.
-#Framework for Python is the tkinter library which is used to build GUI applications.
-#Python is a well intentended and standard language.
-#Python is a high-level, interpreted, general-purpose programming language.
-#Python is a high-level programming language that is interpreted, which means that the code is executed directly by the   
-#interpreter.
-#Inventory Managment System using python, tkinter library, and MySQL Database.
-#in-built functions in python like print(), input(), etc.
-#Opps and Procedural Programming Language difference between them.
-#Procedural programming is a programming paradigm that uses a collection of functions to build a program.
-#Opps programming is a programming paradigm that uses objects and their interactions to build a program.
-#numpy and pandas are two popular libraries in Python for data analysis and manipulation.
-#Pandas is a popular library for data manipulation and analysis in Python.
-#Numpy is a popular library for numerical computing in Python.
+# Python is a programming language that lets you work quickly and integrate systems more effectively.
+# It's a general-purpose language that lets you work with data, whether in the cloud or on-premises.
+# Framework is a collection of tools and libraries that can be used to build applications.
+# Framework for Python is the tkinter library which is used to build GUI applications.
+# Python is a well intentended and standard language.
+# Python is a high-level, interpreted, general-purpose programming language.
+# Python is a high-level programming language that is interpreted, which means that the code is executed directly by the   
+# interpreter.
+# Inventory Managment System using python, tkinter library, and MySQL Database.
+# in-built functions in python like print(), input(), etc.
+# Opps and Procedural Programming Language difference between them.
+# Procedural programming is a programming paradigm that uses a collection of functions to build a program.
+# Opps programming is a programming paradigm that uses objects and their interactions to build a program.
+# numpy and pandas are two popular libraries in Python for data analysis and manipulation.
+# Pandas is a popular library for data manipulation and analysis in Python.
+# Numpy is a popular library for numerical computing in Python.
 
 
 print("Hello World")
@@ -40,6 +40,9 @@ print(True)
 #membership operators
 #identity operators
 #boolean operators
+#Relational operators
+#Assignment operators 
+#Special operators
 
 #arithmetic operators
 #addition
@@ -57,8 +60,9 @@ print(num-num1)
 print(num*num1)
 print(num/num1)
 print(num%num1)
-print(num//num1)
-print(num**num1)
+print(num//num1)#floor division returns the nearest whole number
+print(num**num1)#exponential returns the value of num raised to the power  
+#of num1
 
 #comparison operators
 #equal to
@@ -73,28 +77,41 @@ print(num>num1)
 print(num<num1)
 print(num>=num1)
 print(num<=num1)
-
 #logical operators
 #and
 #or
 #not
 print(num>num1 and num>num1)
 print(num>num1 or num>num1)
-print(not(num>num1 or num>num1))
+print(not(num>num1 or num>num1))#not returns the opposite value of the 
+#expression and returns true if the expression is false 
 
-#bitwise operators
-#and
-#or
-#not
-#xor
-#left shift
-#right shift
+#bitwise operators is used to perform bit-wise operations on integers
+#and is used to perform bitwise and operation on integers
+#or is used to perform bitwise or operation on integers
+#not is used to perform bitwise not operation on integers
+#xor is used to perform exclusive or operation on integers
+#left shift is used to move the bits to the left by the specified amount
+#right shift is used to move the bits to the right by the specified amount
 print(num&num1)
 print(num|num1)
 print(~num)
 print(num^num1)
 print(num<<num1)
-print(num>>num1)
+print(num>>num1)#right shift 
+
+#membership operators is used to check if a sequence is present in an object
+#in
+#not in
+li = [1,2,3,4,5]
+print(3 in li)
+print(3 not in li)
+
+#identity operators is used to check if two objects are the same or not
+#is
+#is not
+print(num is num1)
+print(num is not num1)
 
 name = input("Enter your name: ")
 print("Name is :",name)
@@ -577,4 +594,3 @@ def bill(amt,unit="USD"):
 print(bill("500000","Rs"))
 print(bill("500000","dhr"))
 print(bill("500000"))
-    
