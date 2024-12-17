@@ -99,3 +99,5 @@ else:
             print(f"{user} is not eligible in military with weight {we1 - weight}")
     else:   
         print(f"{user} is not eligible in military with age { ag1 - age}")        
+        
+        
