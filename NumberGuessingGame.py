@@ -32,7 +32,7 @@ while True:
 
     elif choice == 2:
         print("YOU SELECTED MEDIUM LEVEL")
-        end = 50
+        end = 60
         print(f"You have to guess a number between 1 to {end}")
         guessnum = random.randint(1, end)
         for i in range(3):

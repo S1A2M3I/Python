@@ -594,3 +594,10 @@ def bill(amt,unit="USD"):
 print(bill("500000","Rs"))
 print(bill("500000","dhr"))
 print(bill("500000"))
+
+
+fruits = ["apple","banana","cherry"]
+i = 0
+while i<len(fruits):
+        print(fruits[i])
+        i += 1
