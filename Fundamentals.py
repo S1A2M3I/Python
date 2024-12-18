@@ -50,7 +50,6 @@ print(complex)
 #In Set it can have "", '', ''' '''
 #''' is docstring which is used to document the code in python 
 
-
 name = input("Enter your name: ")
 elgaf = 21
 age = int(input("Enter your age: "))
@@ -178,8 +177,57 @@ print(li.extend([100,101,102]))
 str = "Susan hello how are you"
 print(str.title())
 
+
 #For Loop 
 li = ["Susan", "John", "Smith"]
 for i in range(len(li)):
     print(f"Hi {li[i]} ...... nice to meet you")
+    
+    
+#Single line Conditions 
+name = "Susan"
+print("yes" if name == "Susan" else "no")
 
+#ternary operator
+num = 10
+num1 = 20
+print(num1 if num > num1 else num)
+
+#git is a version control system
+#github is a cloud based version control system
+
+#Virtual Environment is a seperate copy of python interpreter.
+#OnlineGDB is a online compiler for python which is Virtual Environment.
+
+nam1 = "John Smith"
+print(nam1.rfind("S"))
+print(nam1.find("S"))
+
+age = 20
+print("Hi {}, you are {} years old".format(nam1, age))
+
+# print(nam1.find("a"))
+
+#user wants to vote using single line if else statement 
+us1 = input("Enter your name ")
+age = int(input("Enter your age "))
+print("yes" if age >= 18 else "no")
+
+na20 = ["John Smith", "John Doe", "John Doe", "John Doe", "John Doe"]
+for i in na20:
+    for j in i:
+        print (j)
+        
+
+#nested list 
+li = [["John", "Smith"], ["Sussan"], ["John", "Doe"]]
+print(li[0][0])
+
+for i in range(1,101):
+    print(i)
+    if i == 15:
+        break
+
+#break take exit out of the loop
+#exit takes exit out of the loop and exit the program
+#continue takes you to the next iteration
