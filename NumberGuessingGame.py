@@ -7,10 +7,12 @@ while True:
     print("1.Easy\n2.Medium\n3.Hard")
     choice = int(input("Select Level: "))
     attempts = 3
+    end = 0
     if choice == 1:
         print("YOU SELECTED EASY LEVEL")
-        print("You have to guess a number between 1 to 30")
-        guessnum = random.randint(1, 30)
+        end = 30
+        print(f"You have to guess a number between 1 to {end}")
+        guessnum = random.randint(1, end)
         for i in range(3):
             cho = int(input("Enter your guess: "))
             if cho == guessnum:
@@ -30,8 +32,9 @@ while True:
 
     elif choice == 2:
         print("YOU SELECTED MEDIUM LEVEL")
-        print("You have to guess a number between 1 to 20")
-        guessnum = random.randint(1, 50)
+        end = 50
+        print(f"You have to guess a number between 1 to {end}")
+        guessnum = random.randint(1, end)
         for i in range(3):
                 cho = int(input("Enter your guess: "))
                 if cho == guessnum:
@@ -51,8 +54,9 @@ while True:
 
     elif choice == 3:
         print("YOU SELECTED HARD LEVEL")
-        print("You have to guess a number between 1 to 100")
-        guessnum = random.randint(1, 100)
+        end = 100
+        print(f"You have to guess a number between 1 to {end}")
+        guessnum = random.randint(1, end)
         for i in range(3):
                 cho = int(input("Enter your guess: "))
                 if cho == guessnum:
