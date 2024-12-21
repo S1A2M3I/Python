@@ -595,9 +595,9 @@ print(bill("500000","Rs"))
 print(bill("500000","dhr"))
 print(bill("500000"))
 
-
+#Reverse the list using while loop
 fruits = ["apple","banana","cherry"]
-i = 0
-while i<len(fruits):
-        print(fruits[i])
-        i += 1
+i = len(fruits)-1
+while i >= 0:
+    print(fruits[i])
+    i = i - 1

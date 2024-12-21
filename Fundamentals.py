@@ -221,7 +221,7 @@ for i in na20:
 
 #nested list 
 li = [["John", "Smith"], ["Sussan"], ["John", "Doe"]]
-print(li[0][0])
+# print(li[0][0])
 
 for i in range(1,101):
     print(i)
@@ -231,3 +231,17 @@ for i in range(1,101):
 #break take exit out of the loop
 #exit takes exit out of the loop and exit the program
 #continue takes you to the next iteration
+
+li9 = len(li) - 1
+while li9>=0:
+    print(li[li9])
+    li9 -= 1
+    
+#types of databases 
+#relational database
+#non-relational database
+
+fruits = ["apple","banana","watermelon","cherry"]
+for i in range(0,len(fruits)):
+    print(f"{i+1}.{fruits[i]} and length is {len(fruits[i])}")
+    
