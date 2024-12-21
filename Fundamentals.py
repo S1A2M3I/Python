@@ -243,5 +243,70 @@ while li9>=0:
 
 fruits = ["apple","banana","watermelon","cherry"]
 for i in range(0,len(fruits)):
-    print(f"{i+1}.{fruits[i]} and length is {len(fruits[i])}")
+    print(f"{i+1}.{fruits[i]} and length is - {len(fruits[i])}")
     
+
+
+#Exception Handling
+#try, except, else, finally
+try:
+    num = 10 / 0
+    print(num)
+except ZeroDivisionError:
+    print("ZeroDivisionError is raised when you try to divide a number by zero")
+else:
+    print("This will be printed if there is no exception")
+finally:
+    print("This will be printed whether there is an exception or not")
+    
+    
+#Exception Handling is used to handle the errors in the program if not handled then 
+# it will crash the program
+# # ValueError is raised when a function or method receives an argument of the wrong 
+# # type, and it cannot be performed with that argument.
+# age = int(input("Enter your age: "))
+# # if age is not a number then ValueError will be raised
+
+# # IndexError is raised when you try to access an index in a list that is out of range
+# li = [1,2,3,4]
+# print(li[5])
+
+# # KeyError is raised when you try to access a key in a dictionary that does not exist
+# d = {"name": "John", "age": 30, "city": "New York"}
+# print(d["address"])
+
+# # TypeError is raised when you try to perform an operation on an object of a 
+# # different type than the expected type for that operation.
+# num = 10
+# print(num + "10")
+
+# # ZeroDivisionError is raised when you try to divide a number by zero
+# num = 10
+# print(num/0)
+
+# # IOError is raised when you try to read or write to a file that does not exist
+# f = open("file.txt", "r")
+# print(f.read())
+
+# # AttributeError is raised when you try to access an attribute of an object that does 
+# # not exist or is not accessible in that context 
+# f = open("file.txt", "r")
+# print(f.name)
+
+# # ImportError is raised when you try to import a module that does not exist
+# import module1
+
+# # ModuleNotFoundError is raised when you try to import a module that does not exist
+# import module1
+
+# # NameError is raised when you try to access a variable that does not exist
+# name = "John"
+# print(name) 
+
+# # SyntaxError is raised when you try to write Python code that is not valid
+# print("Hello world"
+
+# # ValueError is raised when you try to perform an operation on a value that is not valid
+# num = 10
+# print(num + "10")
+
